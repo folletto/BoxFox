@@ -1,0 +1,36 @@
+/*
+ * CSS to style Mailchimp embeds
+ */
+
+#mc_embed_signup {
+
+}
+
+#mc_embed_signup .mc-field-group {
+  margin: 1.5em 0;
+}
+
+#mc_embed_signup .mc-field-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+}
+
+#mc_embed_signup .mc-field-group input:focus {
+  box-shadow: 0 0 0 2px #000000;
+  outline: 0;
+}
+
+#mc_embed_signup #mc-embedded-subscribe {
+  color: #ffffff;
+  background: #000000;
+  padding: 10px 20px;
+  width: 50%;
+  border: 0;
+  font-size: inherit;
+}
+
+#mc_embed_signup #mc-embedded-subscribe:hover,
+#mc_embed_signup #mc-embedded-subscribe:focus {
+  box-shadow: 0 0 0 2px #000000;
+}

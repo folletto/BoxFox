@@ -1,0 +1,259 @@
+/*
+Theme Name: BoxFox
+Theme URI: http://intenseminimalism.com
+Author: Davide 'Folletto' Casali
+Author URI: http://intenseminimalism.com
+Description: Have a form? Wants submissions? This is the theme for you
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,500,700');
+@import url('assets/mailchimp.css');
+
+body {
+  font-family: 'Dosis', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+/************************************************************ LAYOUT */
+#page  {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+
+/******************************************************** BACKGROUND */
+body.custom-background:before {
+  content: '';
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+
+/********************************************************** BRANDING */
+.component--branding {
+  margin: 100px 0;
+}
+
+.component--branding__title {
+  text-align: center;
+  font-size: 48px;
+  margin: 0;
+}
+
+.component--branding__title a {
+  text-decoration: none;
+}
+
+.component--branding__description {
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+}
+
+
+
+/************************************************************** MENU */
+.component--menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+.admin-bar .component--menu { top: 32px; }
+
+.component--menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.component--menu ul li a {
+  display: block;
+  padding: 10px 16px;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 200ms ease-in;
+}
+
+.component--menu ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 200ms ease-out;
+}
+
+
+/************************************************************** POST */
+.component--post {
+  background: #ffffff;
+  color: #000000;
+  padding: 40px;
+}
+
+.component--post a,
+.component--post h1,
+.component--post h2,
+.component--post h3,
+.component--post h4,
+.component--post h5,
+.component--post h6 {
+  color: #000000;
+}
+
+.component--post h1 {
+  margin: 0 0 1.5em;
+}
+
+.component--post h1 a {
+  text-decoration: none;
+}
+
+.component--post hr {
+  border: 0;
+  border-top: 2px solid #000000;
+  margin: 30px 0;
+}
+
+.component--post p {
+  margin: 1em 0;
+}
+
+.component--post p:first-child {
+  margin-top: 0;
+}
+
+.component--post p:last-child {
+  margin-bottom: 0;
+}
+
+.component--post .entry-footer {
+  position: relative;
+}
+
+
+/*********************************************************** WIDGETS */
+
+/* HOME - RECENT ENTRIES */
+.home .widget.widget_recent_entries {
+  margin: 40px 0;
+}
+
+@media (max-width: 600px) {
+  .home .widget.widget_recent_entries {
+    margin: 40px 10px;
+  }
+}
+
+.home .widget.widget_recent_entries h2 {
+  font-size: 15px;
+}
+
+.home .widget.widget_recent_entries ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home .widget.widget_recent_entries ul li {
+  border-top: 4px solid #ffffff;
+  margin: 2em 0;
+  padding: 10px 0;
+}
+
+.home .widget.widget_recent_entries ul li a {
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.home .widget.widget_recent_entries ul li .post-date {
+  display: block;
+}
+
+
+
+/*********************************************************** CREDITS */
+.component--credits {
+  margin: 40px 0 10px;
+  text-align: center;
+}
+
+.component--credits a {
+  text-decoration: none;
+  padding: 2px 5px;
+  opacity: 0.2;
+  font-size: 10px;
+  transition: all 200ms ease-in;
+}
+
+.component--credits a:hover,
+.component--credits a:focus {
+  opacity: 1.0;
+  transition: all 200ms ease-out;
+}
+
+
+
+/***************************************************** ACCESSIBILITY */
+a.skip-link {
+  position: absolute;
+  display: block;
+  top: -1000px;
+}
+
+a.skip-link:focus {
+  z-index: 100000;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  color: #ffffff;
+  background: #000000;
+  border: 4px solid #ffffff;
+  padding: 12px 18px;
+  font-size: 20px;
+  font-weight: 200;
+  outline: 0;
+  text-decoration: none;
+}
+
+
+/******************************************************** EDIT LINK */
+.component--edit a {
+  position: absolute;
+  right: -30px;
+  padding: 1px 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.2;
+  transition: all 200ms ease-in;
+}
+
+.component--edit a:hover {
+  opacity: 1.0;
+  transition: all 200ms ease-out;
+}
