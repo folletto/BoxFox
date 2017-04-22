@@ -155,6 +155,17 @@ body.custom-background:before {
 }
 
 
+
+/************************************************************** META */
+.component--meta {
+
+}
+
+.component--meta a {
+  text-decoration: none;
+}
+
+
 /*********************************************************** WIDGETS */
 
 /* HOME - RECENT ENTRIES */
@@ -169,7 +180,7 @@ body.custom-background:before {
 }
 
 .home .widget.widget_recent_entries h2 {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .home .widget.widget_recent_entries ul {
@@ -179,19 +190,21 @@ body.custom-background:before {
 }
 
 .home .widget.widget_recent_entries ul li {
-  border-top: 4px solid #ffffff;
+  border-top: 2px solid #ffffff;
   margin: 2em 0;
   padding: 10px 0;
 }
 
 .home .widget.widget_recent_entries ul li a {
-  font-size: 22px;
+  font-size: 18px;
   text-decoration: none;
   font-weight: 600;
 }
 
 .home .widget.widget_recent_entries ul li .post-date {
   display: block;
+  font-size: 14px;
+  padding-top: 4px;
 }
 
 

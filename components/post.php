@@ -8,6 +8,9 @@
 	<?php endif; ?>
 
 	<header class="entry-header">
+    <?php if ( get_post_type() == 'post' ) {
+		  get_template_part( 'components/meta' );
+    } ?>
 		<?php
 			if ( is_single() ) {
 				the_title( '<h1 class="entry-title">', '</h1>' );
@@ -15,10 +18,6 @@
 				the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
 			}
     ?>
-
-		<?php if ( get_post_type() == 'post' ) {
-		  boxfox_posted_on();
-    } ?>
 	</header>
 
   <div class="entry-content">

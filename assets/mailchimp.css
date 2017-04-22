@@ -13,7 +13,9 @@
 #mc_embed_signup .mc-field-group input {
   width: 100%;
   padding: 10px;
+  margin: 4px 0;
   border: 1px solid #000000;
+  font-size: 15px;
 }
 
 #mc_embed_signup .mc-field-group input:focus {
