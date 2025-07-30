@@ -35,7 +35,7 @@ CHANGELOG
 LICENSE
 -------
 
-  _Copyright (C) 2017, Davide Casali_  
+  _Copyright (C) 2017, Erin Casali_  
   _Licensed under **GPL v2.0 Opensource License**._
 
 > _"Sometimes you wake up._  
